@@ -1,4 +1,5 @@
 // 1. Two Integer Sum
+// From: https://leetcode.com/problems/two-sum/
 //
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 //
@@ -35,7 +36,27 @@ pub struct Solution;
 
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-        Vec::new()
+        let mut output = Vec::new();
+
+        for i in 0..nums.len() {
+            let i_val = nums[i];
+
+            for j in 0..nums.len() {
+                if j == i {
+                    continue;
+                }
+                let j_val = nums[j];
+
+                if i_val + j_val == target {
+
+                    output.push(i as i32);
+                    output.push(j as i32);
+                    return output;
+                }
+            }
+        }
+
+        panic!("Could not find solution");
     }
 }
 
