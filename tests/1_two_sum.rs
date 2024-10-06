@@ -32,27 +32,32 @@
 //
 // Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
+use std::collections::HashMap;
+
 pub struct Solution;
 
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut output = Vec::new();
 
+        let mut map = HashMap::new();
+
         for i in 0..nums.len() {
             let i_val = nums[i];
+            if !map.contains_key(&i_val) {
+                map.insert(i_val, i);
+            }
 
-            for j in 0..nums.len() {
+            let target_value = target - i_val;
+            if let Some(j) = map.get(&target_value) {
+                let j = *j;
                 if j == i {
                     continue;
                 }
-                let j_val = nums[j];
-
-                if i_val + j_val == target {
-
-                    output.push(i as i32);
-                    output.push(j as i32);
-                    return output;
-                }
+                // found solution
+                output.push(j as i32);
+                output.push(i as i32);
+                return output;
             }
         }
 
