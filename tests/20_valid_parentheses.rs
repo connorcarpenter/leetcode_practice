@@ -37,6 +37,8 @@
 //
 // 1 <= s.length <= 104
 // s consists of parentheses only '()[]{}'.
+//
+// This implementation took 17 minutes 44 seconds to finish
 
 #[test]
 fn official_example_1() {

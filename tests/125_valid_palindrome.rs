@@ -29,6 +29,8 @@
 //
 // 1 <= s.length <= 2 * 105
 // s consists only of printable ASCII characters.
+//
+// This implementation took 19 minutes 4 seconds to finish
 
 #[test]
 fn official_example_1() {
