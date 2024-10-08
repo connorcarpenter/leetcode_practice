@@ -25,7 +25,7 @@
 // All the integers in nums are unique.
 // nums is sorted in ascending order.
 //
-// This implementation took 22 minutes 27 seconds to finish
+// Solved in 22 minutes, 27 seconds
 
 #[test]
 fn official_example_1() {

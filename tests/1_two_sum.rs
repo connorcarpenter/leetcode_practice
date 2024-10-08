@@ -32,7 +32,7 @@
 //
 // Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 //
-// This implementation took 18 minutes 52 seconds to finish
+//  Solved in 18 minutes, 52 seconds
 
 use std::collections::HashMap;
 

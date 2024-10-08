@@ -25,7 +25,7 @@
 // 1 <= prices.length <= 105
 // 0 <= prices[i] <= 104
 //
-// This implementation took 28 minutes 37 seconds to finish
+// Solved in 28 minutes, 37 seconds
 
 #[test]
 fn official_example_1() {
