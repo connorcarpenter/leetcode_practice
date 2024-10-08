@@ -13,7 +13,7 @@
 // Input: [[7,10],[2,4]]
 // Output: true
 //
-// Solved in X minutes, Y seconds
+// Solved in 6 minutes, 59 seconds
 //
 // NOTE: This Leetcode problem is only available to premium customers, so I had to infer
 // the Rust method signature used officially
